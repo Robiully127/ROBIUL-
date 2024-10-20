@@ -60,9 +60,9 @@ const fs = global.nodemodule["fs-extra"];
   
 ];
 	 var callback = () => api.sendMessage({body:`「 ${know} 」\n\n⊰᯽⊱┈────╌❊╌────┈⊰᯽⊱\n┏•━•━•━ ◎ ━•━•━•┓
-🔥 Bot owner 🔥
+🔥 𝗕𝗢𝗧 𝗢𝗡𝗘𝗥  🔥
 ┗•━•━•━ ◎ ━•━•━•┛\n╭────────────╮
-✜ Robiul Islam ✜
+✜𝗥𝗢𝗕𝗜𝗨𝗟 𝗞𝗜𝗡𝗚 👑 ✜
 ╰────────────╯`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"));	
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
    };
