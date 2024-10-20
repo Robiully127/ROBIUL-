@@ -119,7 +119,7 @@ const text = `╭──────•◈•──────╮\n│𝖴𝖲�
 const leiamname = getText("moduleInfo", command.config.name, command.config.description, `${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits);
 
   var link = [
-"https://i.imgur.com/JW5qJfc.jpeg",
+"https://i.imgur.com/B73kko1.png",
   ]
     var callback = () => api.sendMessage({ body: leiamname, attachment: fs.createReadStream(__dirname + "/cache/loidbutter.jpeg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/loidbutter.jpeg"), event.messageID);
 return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/loidbutter.jpeg")).on("close", () => callback());
